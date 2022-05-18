@@ -1,6 +1,5 @@
 #forceChartDiv {
   position:relative;
-  width: 100%;
   height: 600px;
 }
 .node {
@@ -31,5 +30,25 @@
   }
 
 .cursive {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Manrope', sans-serif;
+    color: #253629;
+}
+
+.title-light {
+    font-family: 'Manrope', sans-serif;
+    color: #9bb574;
+    font-weight: bold;
+    display: "inline";
+}
+span, p {
+    font-size: 20px;
+}
+
+img-title {
+    font-family: 'Manrope', sans-serif;
+    color: #364323;
+}
+
+.modal {
+    max-height: 60%;
 }
