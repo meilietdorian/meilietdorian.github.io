@@ -1,6 +1,6 @@
 #forceChartDiv {
   position:relative;
-  height: 600px;
+  height: 800px;
 }
 .node {
   border-radius: 5px;
@@ -13,11 +13,6 @@
 .link {
   stroke: #333;
   stroke-width: 2px;
-}
-#forceChartDiv svg {
-  position:absolute;
-  top: 0px;
-  left: 0px;
 }
 .projectThumb img {
   max-height:150px;
@@ -53,3 +48,16 @@ img-title {
 .modal {
     max-height: 60%;
 }
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+     

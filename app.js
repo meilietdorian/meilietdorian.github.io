@@ -73,7 +73,7 @@ function ForceGraph({
         .attr("width", width)
         .attr("height", height)
         .attr("viewBox", [-width / 2, -height / 2, width, height])
-        .attr("style", `max-width: 100%; height: auto; height: intrinsic;margin:0px ${(screen.width*0.2)/2}px`);
+        .attr("style", `max-width: 100%;height: intrinsic;margin:0px ${(screen.width*0.2)/2}px 150px ${(screen.width*0.2)/2}px`);
 
     const node = svg
       .selectAll("div.node")
