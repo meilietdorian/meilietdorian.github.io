@@ -20,13 +20,13 @@ function ForceGraph({
     linkStrokeLinecap = "round",
     linkStrength=0.1,
     colors = d3.schemeTableau10,
-    width = screen.width,
+    width = document.getElementById("forceChartDiv").offsetWidth,
     height = 800,
     invalidation,
     R=100
   } = {}) {
     M.AutoInit();
-    console.log(nodes)
+
     const N = d3.map(nodes, nodeId).map(intern);
     const LS = d3.map(links, linkSource).map(intern);
     const LT = d3.map(links, linkTarget).map(intern);
@@ -86,7 +86,6 @@ function ForceGraph({
             .attr("id", function(d) { return d.id; })
             .style("width", R+"px")
             .style("height", R+"px")
-            // .append("a")
             .append("img")
               .attr("class","fill")
               .style("border-radius", "100%")
