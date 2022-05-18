@@ -28,8 +28,6 @@
 }
 .fill {
     object-fit: contain;
-    min-width: 64px;
-    min-height: 64px;
   }
 
 .cursive {

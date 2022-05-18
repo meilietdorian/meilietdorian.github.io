@@ -20,10 +20,10 @@ function ForceGraph({
     linkStrokeLinecap = "round",
     linkStrength=0.1,
     colors = d3.schemeTableau10,
-    width = document.getElementById("forceChartDiv").offsetWidth,
+    width = screen.width*0.7,
     height = 800,
     invalidation,
-    R=100
+    R= (document.getElementById("forceChartDiv").offsetWidth > 1000)? 100: 50
   } = {}) {
     M.AutoInit();
 
@@ -73,7 +73,7 @@ function ForceGraph({
         .attr("width", width)
         .attr("height", height)
         .attr("viewBox", [-width / 2, -height / 2, width, height])
-        .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
+        .attr("style", `max-width: 100%; height: auto; height: intrinsic;margin:0px ${(screen.width*0.2)/2}px`);
 
     const node = svg
       .selectAll("div.node")
